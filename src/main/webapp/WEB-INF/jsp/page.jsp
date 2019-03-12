@@ -6,40 +6,40 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>index</title>
-    <meta name="renderer" content="webkit">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<title>Row Editing in DataGrid - jQuery EasyUI Demo</title>
-	<link href="/css/layui.css" type="text/css" rel="stylesheet">
-	<script type="text/javascript" src="/js/jquery.min.js"></script>
-	<script type="text/javascript" src="/js/layui.js"></script>
-	<script type="text/javascript" src="/js/nicePage1.js"></script>
+<title>Row Editing in DataGrid - jQuery EasyUI Demo</title>
+<link href="/css/layui.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="/js/layui.js"></script>
+<script type="text/javascript" src="/js/nicePage1.js"></script>
 
-    <link rel="stylesheet" href="/css/uikit.css">
-    <link rel="stylesheet" href="/css/uikit.almost-flat.css">
-    <link rel="stylesheet" href="/css/laydate.css">
-    <link rel="stylesheet" href="/css/components/notify.css">
-    <script src="/js/uikit.js"></script>
-    <script src="/js/laydate.js"></script>
-    <script src="/js/components/notify.js"></script>
+<link rel="stylesheet" href="/css/uikit.css">
+<link rel="stylesheet" href="/css/uikit.almost-flat.css">
+<link rel="stylesheet" href="/css/laydate.css">
+<link rel="stylesheet" href="/css/components/notify.css">
+<script src="/js/uikit.js"></script>
+<script src="/js/laydate.js"></script>
+<script src="/js/components/notify.js"></script>
 
 
 
 </head>
 <body>
-    <nav class="uk-navbar">
-    	<div class="uk-container ">
-    		<h1 class="uk-navbar-brand uk-hidden-small"
-    			style="font-size: 50px; color: white;padding-top:10px"">
-    			<b>MONGDB</b>
-    		</h1>
-    		<%--<ul class="uk-navbar-nav uk-hidden-small">
+	<nav class="uk-navbar">
+	<div class="uk-container ">
+		<h2 class="site-title" style="font-size:36px;text-align:bottom">
+			<img style="margin-top:10px;height:60px" src="http://media.mongodb.org/logo-mongodb-header.png">
+		</h2>
+		<%--<ul class="uk-navbar-nav uk-hidden-small">
     			<li class="uk-active"><a href="index.jsp">mongdb数据查询页面</a></li>
     		</ul>--%>
-    	</div>
-    	</nav>
-    <!-- 	<div class="main_content">
+	</div>
+	</nav>
+	<!-- 	<div class="main_content">
     		<nav class="uk-breader-container">
     		<div class="uk-container uk-container-center">
     			<div class="uk-grid">
@@ -73,7 +73,7 @@
     	</div> -->
 
 
-  <!--   <div style="width: 90%;height:20%;padding-left: 20px;overflow: auto">
+	<!--   <div style="width: 90%;height:20%;padding-left: 20px;overflow: auto">
                 <blockquote class="layui-elem-quote">查询数据显示</blockquote>
                 以下为两个必须div元素
                 <div id="table" style="overflow: auto"  style="transform: translate(-600px);"></div>
@@ -82,55 +82,54 @@
 
 
 
-<!--11111111111111-->
-	<div style="margin: 15px ; ">
-	<!-- 	<fieldset class="layui-elem-field layui-field-title"
+	<!--11111111111111-->
+	<div style="margin: 15px;">
+		<!-- 	<fieldset class="layui-elem-field layui-field-title"
 				  style="margin-top: 20px;">
 			<legend>添加</legend>
 			
 			
 		</fieldset> -->
-	
-		
-		<form id="addf" class="form-inline layui-form">
-		<fieldset class="layui-elem-field layui-field-title"
-				  >
-		
-			<legend 	>
-					<h5 >添加
-				<div class="layui-input-inline">
-						<input id="jobIdinput" type="text" class="jobIdinput" lay-verify="required" name="jobIdinput" placeholder="请输入jobId" autocomplete="off"
-						style="  height: 32px;
-						  padding-left: 10px;
-						   border-style: solid; 
-						    border-width: 1px;
-						   font-size: 14px;
-						    border-color: #e6e6e6;background-color: #fff;
-						    border-radius: 2px;"/>
-						
 
-				</div>
-			</legend>
-		</fieldset>	
-			
-			
-			<div style="padding: 10px;border: 1px #b2b2b2 solid;width: 1200px">
-			
+
+		<form id="addf" class="form-inline layui-form">
+			<fieldset class="layui-elem-field layui-field-title">
+
+				<legend>
+					<h5>
+						添加
+						<div class="layui-input-inline">
+							<input id="jobIdinput" type="text" class="jobIdinput"
+								lay-verify="required" name="jobIdinput" placeholder="请输入jobId"
+								autocomplete="off"
+								style="height: 32px; padding-left: 10px; border-style: solid; border-width: 1px; font-size: 14px; border-color: #e6e6e6; background-color: #fff; border-radius: 2px;" />
+
+
+						</div>
+				</legend>
+			</fieldset>
+
+
+			<div style="padding: 10px; border: 1px #b2b2b2 solid; width: 1200px;">
+
 				<div id="formpart" class="itemdiv layui-form-item">
 				
+				
 					<div class="layui-input-inline inheight" style="width: 10px;">
-						<label>条件：</label><br/>
+						<label>条件：</label><br />
 					</div>
-					
+
 					<div class="layui-input-inline">
-						<select lay-verify="required" name="factory2" id="factory" lay-filter="" lay-search="lay-search">
+						<select lay-verify="required" name="factory2" id="factory"
+							lay-filter="" lay-search="lay-search">
 							<option value="" selected="selected">请选择影响因素</option>
 							<option value="identity">identity</option>
 						</select>
 					</div>
-				
+
 					<div class="layui-input-inline">
-						<select name="operator" id="operator" lay-verify="required" lay-filter="" lay-search="lay-search">
+						<select name="operator" id="operator" lay-verify="required"
+							lay-filter="" lay-search="lay-search">
 							<option value="" selected="selected">字段类型</option>
 							<option value="String">String</option>
 							<option value="Double">Double</option>
@@ -140,69 +139,74 @@
 							<option value="Boolean">Boolean</option>
 						</select>
 					</div>
-				
-					<div class="layui-input-inline">
-						<input class="layui-input f_val" lay-verify="required" name="f_val" placeholder="请输入因素数值" autocomplete="off"/>
-					</div>
-					
-						
-					<div class="layui-btn" style="transform: translateX(400px);" id="addform">+</div>
-					
-					<div class="layui-btn" style="transform: translateX(400px);" id="rabkool">-</div>
 
-					<button class="layui-btn" lay-submit="" style="transform:translateX(400px);"
-					id="but_sub" lay-filter="formsub" >确认
-					</button>
-					
+					<div class="layui-input-inline">
+						<input class="layui-input f_val" lay-verify="required"
+							name="f_val" placeholder="请输入因素数值" autocomplete="off"
+							style ="margin-bottom: 15px" />
+					</div>
+
+
+					<div class="layui-btn" style="transform: translateX(400px);"
+						id="addform">+</div>
+
+					<div class="layui-btn" style="transform: translateX(400px);"
+						id="rabkool">-</div>
+
+					<button class="layui-btn" lay-submit=""
+						style="transform: translateX(400px);" id="but_sub"
+						lay-filter="formsub">确认</button>
+
 				</div>
 			</div>
 
 		</form>
 	</div>
-	
+
 	<div class="main_content">
-    		<nav class="uk-breader-container">
-    		<div class="uk-container uk-container-center">
-    			<div class="uk-grid">
-    				<div class="uk-width-1-2">
-    					<!-- <ul class="uk-breadcrumb ">
+		<nav class="uk-breader-container">
+		<div class="uk-container uk-container-center">
+			<div class="uk-grid">
+				<div class="uk-width-1-2">
+					<!-- <ul class="uk-breadcrumb ">
     						<li class="uk-active"><span>mongdb数据查询</span></li>
     					</ul> -->
-    				</div>
-    			</div>
-    		</div>
-    		</nav>
-    				
-    			<ul class="uk-tab" id="rule_base_ul"
-    				data-uk-switcher="{connect:'#rule_target_ul'}">
-    				<li class="uk-active"><a href="" id="ss2">数据查询</a></li>
-    			</ul>
-    				<li id="ruleconf_3">
-    				
-    					<form style="padding-top: 35px;">
-    						JobId: <input id="ruleName" type="text" name="ruleName" value=""
-    						style="height: 30px ; padding-left: 10px;"
-    							>
-    	<!-- 	<div style="transform: translate(400px,-24px);"> -->		
-    							<button id="clickbutton" class="uk-button uk-button-primary"
-    								 type="button">查询单个文档</button>
-								<button id="clickbuttonfindall" class="uk-button uk-button-primary"
-										type="button">查询全部文档</button>
-    	<!-- </div>	 -->	
-    					</form>
-    					
-    				</li>
-    			</ul>
-    		</div>
-	
-	  <div style="width: 90%;height:20%;padding-left: 20px;overflow: auto">
-                <blockquote class="layui-elem-quote">查询数据显示</blockquote>
-                <!--以下为两个必须div元素-->
-                <div id="table" style="overflow: auto"  style="transform: translate(-600px);"></div>
-                <div id="pageBar"></div>
-        </div>
+				</div>
+			</div>
+		</div>
+		</nav>
+
+		<ul class="uk-tab" id="rule_base_ul"
+			data-uk-switcher="{connect:'#rule_target_ul'}">
+			<li class="uk-active"><a href="" id="ss2">数据查询</a></li>
+		</ul>
+		<li id="ruleconf_3">
+
+			<form style="padding-top: 35px;">
+				JobId: <input id="ruleName" type="text" name="ruleName" value=""
+					style="height: 30px; padding-left: 10px;">
+				<!-- 	<div style="transform: translate(400px,-24px);"> -->
+				<button id="clickbutton" class="uk-button uk-button-primary"
+					type="button">查询单个文档</button>
+				<button id="clickbuttonfindall" class="uk-button uk-button-primary"
+					type="button">查询全部文档</button>
+				<!-- </div>	 -->
+			</form>
+
+		</li>
+		</ul>
+	</div>
+
+	<div
+		style="width: 90%; height: 20%; padding-left: 20px; overflow: auto">
+		<blockquote class="layui-elem-quote">查询数据显示</blockquote>
+		<!--以下为两个必须div元素-->
+		<div id="table" style="overflow: auto"
+			style="transform: translate(-600px);"></div>
+		<div id="pageBar"></div>
+	</div>
 	<%--<table id="tabledata" lay-filter="the_table" ></table>--%>
-<!--1111112222222-->
+	<!--1111112222222-->
 </body>
 
 <script type="text/javascript">
@@ -393,7 +397,9 @@
 
         $("#addform").click(function () {
             //添加的内容
-            var addform =        	'            <div id="rab" class="itemdiv layui-form-item">\n' +
+            var addform =        
+            	'<div id =rabk>\n'+
+            	'            <div id="rab" class="itemdiv layui-form-item">\n' +
                 '                <div class="layui-input-inline inheight" style="width: 10px;">\n' +
                 '                    <label>并且：</label><br/>\n' +
                 '                </div>\n' +
@@ -437,8 +443,9 @@
                 '                <div class="layui-input-inline">\n' +
                 '                    <input class="layui-input f_val" lay-verify="required" name="f_val" placeholder="请输入因素数值" autocomplete="off"/>\n' +
                 '                </div>\n' +
+               ' </div>\n'+
                 '            </div>';
-                
+      /*           
             $("#formpart").after($(addform));
 
 			form.render();
@@ -446,7 +453,7 @@
         
         
         
-        
+
     $("#rabkool").click(function () {
      
         
@@ -454,6 +461,15 @@
         	
                      $("#rab").remove()
                    
+                     form.render();
+             });  */
+            $("#formpart").append($(addform)); 
+			form.render();
+        }); 
+        
+    $("#rabkool").click(function () {
+        	console.info("deldeeee")
+                     $("#rabk>div").last().remove();
                      form.render();
              }); 
         

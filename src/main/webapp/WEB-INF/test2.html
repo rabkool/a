@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
-    <meta charset="utf-8"/>
-    <style type="text/css">
+<title></title>
+<meta charset="utf-8" />
+<style type="text/css">
+#ta tr {
+	height: 34px;
+}
+</style>
 
-        #ta tr{
-            height: 34px;
-
-        }
-
-    </style>
-
-    <script type="text/javascript">
+<script type="text/javascript">
 
         function delRow(a) {
             //获取table对象
@@ -43,49 +40,46 @@
 </head>
 <body>
 
-<table border="1px" id="ta">
-    <tr  style="text-align: center;font-weight: bold;">
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-        <td>4</td>
-        <td>操作</td>
-    </tr>
+	<table border="1px" id="ta">
+		<tr style="text-align: center; font-weight: bold;">
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>操作</td>
+		</tr>
 
-    <tr>
-        <td>1</td>
-        <td>11</td>
-        <td>111</td>
+		<tr>
+			<td>1</td>
+			<td>11</td>
+			<td>111</td>
 
-        <td id="cell">1111</td>
-        <td align="center">
-            <input type="button" name="" id="" value="修改" onclick="updataRow(this)" />
-            <input type="button" name="" id="" value="删除" onclick="delRow(this)" />
-        </td>
-    </tr>
+			<td id="cell">1111</td>
+			<td align="center"><input type="button" name="" id="" value="修改"
+				onclick="updataRow(this)" /> <input type="button" name="" id=""
+				value="删除" onclick="delRow(this)" /></td>
+		</tr>
 
-    <tr>
-        <td>2</td>
-        <td>11</td>
-        <td>111</td>
-        <td>1111</td>
-        <td align="center">
-            <input type="button" name="" id="" value="修改" onclick="updataRow(this)" />
-            <input type="button" name="" id="" value="删除" onclick="delRow(this)"/>
-        </td>
-    </tr>
+		<tr>
+			<td>2</td>
+			<td>11</td>
+			<td>111</td>
+			<td>1111</td>
+			<td align="center"><input type="button" name="" id="" value="修改"
+				onclick="updataRow(this)" /> <input type="button" name="" id=""
+				value="删除" onclick="delRow(this)" /></td>
+		</tr>
 
-    <tr>
-        <td>3</td>
-        <td>11</td>
-        <td>111</td>
-        <td>1111</td>
-        <td align="center">
-            <input type="button" name="" id="" value="修改" onclick="updataRow(this)" />
-            <input type="button" name="" id="" value="删除" onclick="delRow(this)"/>
-        </td>
-    </tr>
-</table>
+		<tr>
+			<td>3</td>
+			<td>11</td>
+			<td>111</td>
+			<td>1111</td>
+			<td align="center"><input type="button" name="" id="" value="修改"
+				onclick="updataRow(this)" /> <input type="button" name="" id=""
+				value="删除" onclick="delRow(this)" /></td>
+		</tr>
+	</table>
 
 </body>
 </html>

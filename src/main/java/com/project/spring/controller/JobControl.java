@@ -45,7 +45,7 @@ public class JobControl {
         service.save(job);
         return ResponseEntity.noContent().build();
     }
-
+  
     /**
      * 查找
      * @param id
@@ -124,7 +124,7 @@ public class JobControl {
         }
         byJobId.setJobId(jobId);
         //byJobId.setIdentity(identity);
-
+ 
         service.update(byJobId);
         return ResponseEntity.noContent().build();
     }
@@ -149,12 +149,8 @@ public class JobControl {
         System.out.println(jobId);
         System.out.println(identity);
 
-
-
-
         JSONObject  jsonObject = JSONObject.parseObject(identity);
         Map<String, Object> innerMap = jsonObject.getInnerMap();
-
 
         Job byJobId = service.findByJobId(jobId);
         if(byJobId == null){

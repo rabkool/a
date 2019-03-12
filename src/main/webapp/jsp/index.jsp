@@ -15,24 +15,30 @@
 <script src="./js/laydate.js"></script>
 <script src="./js/components/notify.js"></script>
 <style type="text/css">
-     .mybreak{
-     word-wrap: break-word;
-     word-break:break-all;
-     white-space:pre-wrap;
-     }
-     
-		/* 强制不换行 */
-        .nowrap{white-space:nowrap;}
-        /* 允许单词内断句，首先会尝试挪到下一行，看看下一行的宽度够不够，
+.mybreak {
+	word-wrap: break-word;
+	word-break: break-all;
+	white-space: pre-wrap;
+}
+
+/* 强制不换行 */
+.nowrap {
+	white-space: nowrap;
+}
+/* 允许单词内断句，首先会尝试挪到下一行，看看下一行的宽度够不够，
         不够的话就进行单词内的断句 */
-        .breakword{word-wrap: break-word;}
-        /* 断句时，不会把长单词挪到下一行，而是直接进行单词内的断句 */
-        .breakAll{word-break:break-all;}            
-        /* 超出部分显示省略号 */
-        .ellipsis{
-        text-overflow:ellipsis;
-        overflow:hidden;
-        }
+.breakword {
+	word-wrap: break-word;
+}
+/* 断句时，不会把长单词挪到下一行，而是直接进行单词内的断句 */
+.breakAll {
+	word-break: break-all;
+}
+/* 超出部分显示省略号 */
+.ellipsis {
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
 </style>
 <!-- 日期插件 -->
 
@@ -205,16 +211,16 @@
 					</div>
 				</li>
 				<li id="ruleconf_5">
-				<form class="uk-form"action="">
-				<div class="uk-grid">
-				    <div class="uk-width-medium-1-10">
-				    <label>基金名称:</label>
-				    <div class="uk-form-controls">
-				     <select class="uk-form-width-large"></select>
-				    </div>
-				    </div>
-				</div>
-				</form>
+					<form class="uk-form" action="">
+						<div class="uk-grid">
+							<div class="uk-width-medium-1-10">
+								<label>基金名称:</label>
+								<div class="uk-form-controls">
+									<select class="uk-form-width-large"></select>
+								</div>
+							</div>
+						</div>
+					</form>
 				</li>
 			</ul>
 		</div>
@@ -244,7 +250,7 @@
 					</select> -->
 				</div>
 				<div class="uk-margin-top">
-					<label>过滤条件：</label> <input 
+					<label>过滤条件：</label> <input
 						class="uk-margin-left uk-form-width-medium" id="ruleWhere"
 						type="text" placeholder="请输入过滤条件">
 					<!--         				<select id="ruleWhere" class="uk-margin-left uk-form-width-medium"> -->

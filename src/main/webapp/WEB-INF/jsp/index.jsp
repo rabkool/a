@@ -6,77 +6,79 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>index</title>
-    <meta name="renderer" content="webkit">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<title>Row Editing in DataGrid - jQuery EasyUI Demo</title>
-	<link href="/css/layui.css" type="text/css" rel="stylesheet">
-	<script type="text/javascript" src="/js/jquery.min.js"></script>
-	<script type="text/javascript" src="/js/layui.js"></script>
-	<script type="text/javascript" src="/js/nicePage1.js"></script>
+<title>Row Editing in DataGrid - jQuery EasyUI Demo</title>
+<link href="/css/layui.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="/js/layui.js"></script>
+<script type="text/javascript" src="/js/nicePage1.js"></script>
 
-    <link rel="stylesheet" href="/css/uikit.css">
-    <link rel="stylesheet" href="/css/uikit.almost-flat.css">
-    <link rel="stylesheet" href="/css/laydate.css">
-    <link rel="stylesheet" href="/css/components/notify.css">
-    <script src="/js/uikit.js"></script>
-    <script src="/js/laydate.js"></script>
-    <script src="/js/components/notify.js"></script>
+<link rel="stylesheet" href="/css/uikit.css">
+<link rel="stylesheet" href="/css/uikit.almost-flat.css">
+<link rel="stylesheet" href="/css/laydate.css">
+<link rel="stylesheet" href="/css/components/notify.css">
+<script src="/js/uikit.js"></script>
+<script src="/js/laydate.js"></script>
+<script src="/js/components/notify.js"></script>
 
 
 
 </head>
 <body>
-    <nav class="uk-navbar">
-    	<div class="uk-container ">
-    		<h1 class="uk-navbar-brand uk-hidden-small"
-    			style="font-size: 40px; color: white;">
-    			<b>MONGDB</b>
-    		</h1>
-    		<ul class="uk-navbar-nav uk-hidden-small">
-    			<li class="uk-active"><a href="page.jsp">mongdb数据管理页面</a></li>
-    		</ul>
-    	</div>
-    	</nav>
-    	<div class="main_content">
-    		<nav class="uk-breader-container">
-    		<div class="uk-container uk-container-center">
-    			<div class="uk-grid">
-    				<div class="uk-width-1-2">
-    					<ul class="uk-breadcrumb ">
-    						<li class="uk-active"><span>mongdb数据查询</span></li>
-    					</ul>
-    				</div>
-    			</div>
-    		</div>
-    		</nav>
-    		<div class="uk-container uk-container-center">
-    			<ul class="uk-tab" id="rule_base_ul"
-    				data-uk-switcher="{connect:'#rule_target_ul'}">
-    				<li class="uk-active"><a href="" id="ss2">数据查询</a></li>
-    			</ul>
-    				<li id="ruleconf_3">
-    					<form style="padding-top: 35px;">
-    						表id: <input id="ruleName" type="text" name="ruleName" value=""
-    							style="width: 150px; height: 25px;">
-    						<div>
-    							<button id="clickbutton" class="uk-button uk-button-primary"
-    								style="margin: -30px; margin-left: 555px;" type="button">查询</button>
-    						</div>
-    					</form>
-    				</li>
-    			</ul>
-    		</div>
-    	</div>
+	<nav class="uk-navbar">
+	<div class="uk-container ">
+		<h1 class="uk-navbar-brand uk-hidden-small"
+			style="font-size: 40px; color: white;">
+			<b>MONGDB</b>
+		</h1>
+		<ul class="uk-navbar-nav uk-hidden-small">
+			<li class="uk-active"><a href="page.jsp">mongdb数据管理页面</a></li>
+		</ul>
+	</div>
+	</nav>
+	<div class="main_content">
+		<nav class="uk-breader-container">
+		<div class="uk-container uk-container-center">
+			<div class="uk-grid">
+				<div class="uk-width-1-2">
+					<ul class="uk-breadcrumb ">
+						<li class="uk-active"><span>mongdb数据查询</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		</nav>
+		<div class="uk-container uk-container-center">
+			<ul class="uk-tab" id="rule_base_ul"
+				data-uk-switcher="{connect:'#rule_target_ul'}">
+				<li class="uk-active"><a href="" id="ss2">数据查询</a></li>
+			</ul>
+			<li id="ruleconf_3">
+				<form style="padding-top: 35px;">
+					表id: <input id="ruleName" type="text" name="ruleName" value=""
+						style="width: 150px; height: 25px;">
+					<div>
+						<button id="clickbutton" class="uk-button uk-button-primary"
+							style="margin: -30px; margin-left: 555px;" type="button">查询</button>
+					</div>
+				</form>
+			</li>
+			</ul>
+		</div>
+	</div>
 
 
-    <div style="width: 90%;height:20%;padding-left: 20px;overflow: auto">
-                <blockquote class="layui-elem-quote">查询数据显示</blockquote>
-                <!--以下为两个必须div元素-->
-                <div id="table" style="overflow: auto"></div>
-                <div id="pageBar"></div>
-        </div>
+	<div
+		style="width: 90%; height: 20%; padding-left: 20px; overflow: auto">
+		<blockquote class="layui-elem-quote">查询数据显示</blockquote>
+		<!--以下为两个必须div元素-->
+		<div id="table" style="overflow: auto"></div>
+		<div id="pageBar"></div>
+	</div>
 
 </body>
 
