@@ -31,9 +31,9 @@
 <body>
 	<nav class="uk-navbar">
 	<div class="uk-container ">
-		<h2 class="site-title" style="font-size:36px;text-align:bottom">
-			<img style="margin-top:10px;height:60px" src="http://media.mongodb.org/logo-mongodb-header.png">
-		</h2>
+			<h2 class="site-title" style="font-size:36px;text-align:bottom">
+				<img style="margin-top:10px;height:60px" src="http://media.mongodb.org/logo-mongodb-header.png">
+			</h2>
 		<%--<ul class="uk-navbar-nav uk-hidden-small">
     			<li class="uk-active"><a href="index.jsp">mongdb数据查询页面</a></li>
     		</ul>--%>
@@ -143,7 +143,7 @@
 					<div class="layui-input-inline">
 						<input class="layui-input f_val" lay-verify="required"
 							name="f_val" placeholder="请输入因素数值" autocomplete="off"
-							style ="margin-bottom: 15px" />
+								style ="margin-bottom: 15px" />
 					</div>
 
 
@@ -398,7 +398,7 @@
         $("#addform").click(function () {
             //添加的内容
             var addform =        
-            	'<div id =rabk>\n'+
+            	'	<div id =rabk>\n'+
             	'            <div id="rab" class="itemdiv layui-form-item">\n' +
                 '                <div class="layui-input-inline inheight" style="width: 10px;">\n' +
                 '                    <label>并且：</label><br/>\n' +
@@ -443,8 +443,8 @@
                 '                <div class="layui-input-inline">\n' +
                 '                    <input class="layui-input f_val" lay-verify="required" name="f_val" placeholder="请输入因素数值" autocomplete="off"/>\n' +
                 '                </div>\n' +
-               ' </div>\n'+
-                '            </div>';
+                ' 			</div>\n'+
+                '     </div>';
       /*           
             $("#formpart").after($(addform));
 
@@ -463,15 +463,15 @@
                    
                      form.render();
              });  */
-            $("#formpart").append($(addform)); 
-			form.render();
-        }); 
+	            $("#formpart").append($(addform)); 
+				form.render();
+	        }); 
         
-    $("#rabkool").click(function () {
-        	console.info("deldeeee")
-                     $("#rabk>div").last().remove();
-                     form.render();
-             }); 
+		    $("#rabkool").click(function () {
+		        	console.info("deldeeee")
+		                     $("#rabk>div").last().remove();
+		                     form.render();
+		             }); 
         
 
         
